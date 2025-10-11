@@ -1,6 +1,7 @@
 """
 Data models for the weather data
 """
+#TODO Add rain, snow, and foggy details
 
 from dataclasses import dataclass, asdict
 from datetime import datetime
