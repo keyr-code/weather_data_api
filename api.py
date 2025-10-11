@@ -275,4 +275,5 @@ if __name__ == '__main__':
     # Run Flask development server
     # Easy testing during development
     # WARNING: Don't use in production (use gunicorn/uwsgi instead)
+    # Run gunicorn -w 4 -b 0.0.0.0:5000 api:app in terminal
     app.run(debug=True, host='0.0.0.0', port=5000)
