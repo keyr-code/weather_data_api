@@ -32,7 +32,7 @@ class WeatherData:
         """
         Create WeatherData from dictionary.
         """
-        # Convert ISO string back to datetime object .
+        # Convert ISO string back to datetime object.
         # Database stores as string, we need datetime object
         if isinstance(data['timestamp'], str):
             data['timestamp'] = datetime.fromisoformat(data['timestamp'])
