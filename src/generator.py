@@ -4,7 +4,7 @@ Weather Generator - Creating random weather data.
 
 from random import uniform, choice
 from datetime import datetime
-from data_model import WeatherData
+from .data_model import WeatherData
 
 
 class WeatherGenerator:

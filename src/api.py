@@ -5,8 +5,8 @@ Weather API - REST endpoints for weather data access.
 
 from flask import Flask, jsonify, request
 from datetime import datetime
-from generator import WeatherGenerator
-from database import WeatherRepository
+from .generator import WeatherGenerator
+from .database import WeatherRepository
 
 # Initialize Flask application
 

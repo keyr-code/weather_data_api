@@ -5,7 +5,7 @@ Weather data storing in databases
 import sqlite3
 from datetime import datetime
 from typing import List, Optional
-from data_model import WeatherData
+from .data_model import WeatherData
 
 
 class WeatherRepository:
