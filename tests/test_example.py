@@ -4,9 +4,9 @@ Example usage and testing script.
 """
 
 from datetime import datetime
-from generator import WeatherGenerator
-from database import WeatherRepository
-from data_model import WeatherData
+from src.generator import WeatherGenerator
+from src.database import WeatherRepository
+from src.data_model import WeatherData
 
 
 def test_models():
