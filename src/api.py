@@ -5,6 +5,7 @@ Weather API - REST endpoints for weather data access.
 
 from flask import Flask, jsonify, request
 from datetime import datetime
+import os
 from .generator import WeatherGenerator
 from .database import WeatherRepository
 
@@ -12,10 +13,12 @@ from .database import WeatherRepository
 
 app = Flask(__name__)
 
-# Initialize dependencies
+# Initialize dependencies with shared database path
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+db_path = os.path.join(root_dir, "weather.db")
 
 generator = WeatherGenerator()
-repository = WeatherRepository()
+repository = WeatherRepository(db_path)
 
 
 @app.route('/weather/live/<location>', methods=['GET'])
